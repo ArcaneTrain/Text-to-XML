@@ -1,14 +1,24 @@
+<!DOCTYPE html>
 <html>
-<head>
-  <title>D&D Text Exporter</title>
-</head>
-<body>
-  <h1>D&D Text Exporter</h1>
-  <p>Paste your text below, then press the "Export" button to turn it into a .XML file.</p>
-  <form action="" method="POST">
-    <textarea id="text-input" name="text-input" rows="10" cols="80"></textarea>
-    <br>
-    <input type="submit" value="Export">
-  </form>
-</body>
+	<head>
+		<title>D&D Text Exporter</title>
+		<style>
+			body {
+				background-color: grey;
+			}
+			textarea {
+				width: 500px;
+				height: 250px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>D&D Text Exporter</h1>
+		<p>Paste your text here:</p>
+		<textarea>Paste your text here.</textarea>
+		<br>
+		<form action="export.php" method="post">
+			<input type="submit" value="Export" name="export_btn">
+		</form>
+	</body>
 </html>
